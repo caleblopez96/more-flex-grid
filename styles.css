@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Caleb Lopez
 */
 
 :root{
@@ -74,6 +74,9 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* For All Headings */
@@ -137,6 +140,7 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
 }
 
 nav a{
@@ -164,7 +168,8 @@ nav a span{
     display: block;
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
-    /* TO DO */
+    top: -140px;
+    z-index: 1;
 }
 
 nav a:focus{
@@ -224,17 +229,25 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem 2rem;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #plants h4{
@@ -247,6 +260,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: -1;
 }
 
 .price{
@@ -265,12 +279,17 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem 2rem;
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 /* Contact text color */
@@ -361,6 +380,8 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* Heading for Social Media Section */
